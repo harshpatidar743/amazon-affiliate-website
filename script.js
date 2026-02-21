@@ -6,17 +6,17 @@ let products = [
         "name": "Boat Nirvana Ion ANC",
         "description": "ANC(~32dB), 120Hrs Battery, App Support, Crystal Bionic Sound, 4Mics ENx",
         "price": "₹1799.00",
-        "image": "Screenshot 2026-02-22 001321.png",
+        "image": "Screenshot 2026-02-22 022432.png",
         "amazonLink": "https://amzn.to/4rWIU6u",
         "category": "Electronics"
     },
     {
         "id": 2,
-        "name": "Smart Fitness Watch",
-        "description": "Track your health, heart rate, steps, and sleep with this sleek smartwatch",
-        "price": "$149.99",
-        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
-        "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
+        "name": "boAt Airdopes Prime 701 ANC",
+        "description": "46dB Hybrid ANC, 50Hr Battery, Real Spatial Audio,Multidevice Connect,App Support, Bluetooth Earbuds",
+        "price": "₹1959.00",
+        "image": "Screenshot 2026-02-22 022200.png",
+        "amazonLink": "https://amzn.to/4avwn4i",
         "category": "Electronics"
     },
     {
@@ -70,6 +70,42 @@ let products = [
         "description": "Insulated 32oz water bottle keeps drinks cold for 24 hours",
         "price": "$24.99",
         "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop",
+        "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
+        "category": "Sports"
+    },
+    {
+        "id": 9,
+        "name": "Bluetooth Speaker",
+        "description": "Portable waterproof speaker with 360-degree surround sound",
+        "price": "$49.99",
+        "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+        "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
+        "category": "Electronics"
+    },
+    {
+        "id": 10,
+        "name": "Backpack",
+        "description": "Durable and stylish backpack for work, school, or travel",
+        "price": "$39.99",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+        "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
+        "category": "Fashion"
+    },
+    {
+        "id": 11,
+        "name": "Desk Lamp",
+        "description": "LED desk lamp with adjustable brightness and color temperature",
+        "price": "$34.99",
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=300&fit=crop",
+        "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
+        "category": "Home & Kitchen"
+    },
+    {
+        "id": 12,
+        "name": "Yoga Blocks",
+        "description": "Set of 2 eco-friendly yoga blocks for better support",
+        "price": "$19.99",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop",
         "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
         "category": "Sports"
     }

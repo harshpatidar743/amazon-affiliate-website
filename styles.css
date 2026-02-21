@@ -73,7 +73,8 @@ header {
     transition: var(--transition);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary-color);
 }
 
@@ -126,6 +127,8 @@ header {
     font-size: 1.1rem;
     transition: var(--transition);
     animation: fadeInUp 1s ease 0.4s both;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -345,6 +348,20 @@ footer p {
     color: #999 !important;
 }
 
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -363,6 +380,178 @@ footer p {
     padding: 50px;
     font-size: 1.2rem;
     color: var(--text-light);
+}
+
+/* Page Hero (for About, Contact, Privacy pages) */
+.page-hero {
+    height: 50vh;
+    min-height: 300px;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #1a1a2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.page-hero .hero-content h2 {
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-hero .hero-content p {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+/* Page Content */
+.page-content {
+    padding: 80px 0;
+    background: var(--white);
+    min-height: 60vh;
+}
+
+/* About Page Full */
+.about-section-full {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section-full h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin: 30px 0 15px 0;
+}
+
+.about-section-full p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact Page */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info h3,
+.contact-form-section h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-form-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Privacy Policy Page */
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-container .last-updated {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.privacy-container h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin: 35px 0 15px 0;
+}
+
+.privacy-container p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.privacy-container ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.privacy-container ul li {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.privacy-container a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.privacy-container a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -407,6 +596,21 @@ footer p {
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .page-hero .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-section-full h3,
+    .contact-info h3,
+    .contact-form-section h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -425,5 +629,14 @@ footer p {
     .filter-btn {
         padding: 8px 18px;
         font-size: 0.9rem;
+    }
+
+    .page-hero {
+        height: 40vh;
+        min-height: 250px;
+    }
+    
+    .page-hero .hero-content h2 {
+        font-size: 1.8rem;
     }
 }
