@@ -7,7 +7,7 @@ let products = [
         "description": "ANC(~32dB), 120Hrs Battery, App Support, Crystal Bionic Sound, 4Mics ENx",
         "price": "₹1799.00",
         "image": "Screenshot 2026-02-22 001321.png",
-        "amazonLink": "https://amzn.to/4rWIU6u?tag=mgmdeals-12",
+        "amazonLink": "https://amzn.to/4rWIU6u",
         "category": "Electronics"
     },
     {
