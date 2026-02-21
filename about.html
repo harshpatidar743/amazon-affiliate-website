@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Amazon Deals</title>
+    <title>About - MGM Deals</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,11 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>🛒 Amazon Deals</h1>
+                <a href="index.html"><h1>🛒 MGM Deals</h1></a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -35,7 +35,7 @@
     <section class="page-hero">
         <div class="hero-content">
             <h2>About Us</h2>
-            <p>Learn more about Amazon Picks and our mission</p>
+            <p>Learn more about MGM Deals and our mission</p>
         </div>
     </section>
 
@@ -43,25 +43,14 @@
     <section class="page-content">
         <div class="container">
             <div class="about-section-full">
-                <h3>Welcome to Amazon Picks</h3>
-                <p>Amazon Picks is your trusted destination for discovering high-quality products curated from Amazon. We research, test, and select the best products across various categories to help you make informed purchasing decisions.</p>
-                
+                <h3>Welcome to MGM Deals</h3>
+                <p>MGM Deals is your trusted destination for discovering high-quality products curated from Amazon. We research, test, and select the best products across various categories to help you make informed purchasing decisions.</p>
+
                 <h3>Our Mission</h3>
-                <p>Our mission is to simplify your shopping experience by providing honest product reviews and recommendations. We believe in transparency and only recommend products we genuinely believe in.</p>
-                
-                <h3>What We Do</h3>
-                <p>We curate products from Amazon across multiple categories including electronics, home & kitchen, sports, fashion, and more. Each product is carefully selected based on quality, value, and customer satisfaction.</p>
-                
-                <h3>Our Promise</h3>
-                <ul>
-                    <li>✅ Honest and unbiased product reviews</li>
-                    <li>✅ Carefully curated product selections</li>
-                    <li>✅ Fast loading and user-friendly website</li>
-                    <li>✅ Excellent customer support</li>
-                </ul>
-                
+                <p>Our mission is to simplify your shopping experience by curating only the best products and providing honest, detailed reviews to help you make the right choice.</p>
+
                 <h3>Affiliate Disclosure</h3>
-                <p>Amazon Picks is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. This means we may earn a commission when you purchase through our links, at no extra cost to you.</p>
+                <p>MGM Deals is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. This means we may earn a commission when you purchase through our links, at no extra cost to you.</p>
             </div>
         </div>
     </section>
@@ -69,9 +58,10 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Amazon Picks. All rights reserved.</p>
+            <p>&copy; 2024 MGM Deals. All rights reserved.</p>
             <div class="footer-links">
                 <a href="index.html">Home</a> | 
+                <a href="products.html">Products</a> | 
                 <a href="about.html">About</a> | 
                 <a href="contact.html">Contact</a> | 
                 <a href="privacy-policy.html">Privacy Policy</a>
@@ -81,5 +71,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initMobileMenu();
+        });
+    </script>
 </body>
 </html>

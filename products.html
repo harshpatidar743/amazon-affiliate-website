@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MGM Deals</title>
+    <title>All Products - MGM Deals</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
             </ul>
             <div class="hamburger">
@@ -31,50 +31,29 @@
         </nav>
     </header>
 
-    <!-- Contact Hero -->
+    <!-- Products Hero -->
     <section class="page-hero">
         <div class="hero-content">
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you</p>
+            <h2>All Products</h2>
+            <p>Browse our complete collection of curated products</p>
         </div>
     </section>
 
-    <!-- Contact Content -->
+    <!-- Products Section -->
     <section class="page-content">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Have questions about our products or need recommendations? Feel free to reach out to us!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <span>contact@mgmdeals.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <span>Your City, Your Country</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-section">
-                    <h3>Send a Message</h3>
-                    <form class="contact-form-page">
-                        <div class="form-group">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Your Email</label>
-                            <input type="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea placeholder="Your message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="Electronics">Electronics</button>
+                <button class="filter-btn" data-category="Home & Kitchen">Home & Kitchen</button>
+                <button class="filter-btn" data-category="Sports">Sports</button>
+                <button class="filter-btn" data-category="Fashion">Fashion</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be loaded here dynamically -->
             </div>
         </div>
     </section>
@@ -96,7 +75,10 @@
 
     <script src="script.js"></script>
     <script>
+        // Initialize category filter for this page
         document.addEventListener('DOMContentLoaded', () => {
+            displayProducts(products);
+            initCategoryFilter();
             initMobileMenu();
         });
     </script>
